@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 interface HighlightItem {
   title: string;
@@ -11,7 +11,7 @@ interface ProjectHighlightsProps {
   highlights: HighlightItem[];
 }
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: {
     transition: {
@@ -20,14 +20,14 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 28 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.65,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   },
 };
