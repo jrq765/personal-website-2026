@@ -125,6 +125,54 @@ export const projects: ProjectData[] = [
     ],
   },
   {
+    slug: "costco-kirkland",
+    title: "Costco: Kirkland for ALL",
+    category: "Corporate Strategy, BA 453 Capstone",
+    image: "/logos/costco.png",
+    embedUrl: "https://www.canva.com/design/DAHK_IsM7jE/bgz4qKdc6Rj1wAFw6r-nEQ/view?embed",
+    description: "As part of a five-person team in my corporate strategy capstone (BA 453), I helped develop and pitch a strategic recommendation for Costco Wholesale. Our proposal, \"Kirkland for ALL,\" introduced a free-tier membership model giving non-members access exclusively to Kirkland Signature products during designated shopping hours — designed to expand Costco's customer base, drive merchandise revenue, and reduce over-reliance on membership fees.",
+    highlights: [
+      {
+        title: "The Proposal",
+        description: "A free-tier membership giving non-members access to Kirkland Signature products during designated hours, opening a new revenue stream without cannibalizing existing memberships.",
+      },
+      {
+        title: "My Role",
+        description: "Designed the presentation deck, delivered the introduction and current position analysis, built the SWOT, and led competitor research covering Sam's Club, Amazon, Target, and online grocery platforms.",
+      },
+      {
+        title: "Core Concept",
+        description: "Developed the \"Kirkland for ALL\" concept and authored the risk and contingency sections, identifying three primary implementation threats and outlining response strategies for each.",
+      },
+      {
+        title: "Financial Projections",
+        description: "The team modeled a five-year path to $13B in net income, with total revenue growing from $338B to $420B by 2030.",
+      },
+      {
+        title: "Competitive Landscape",
+        description: "Mapped Costco's position against Sam's Club, Amazon, Target, and emerging online grocery platforms to ground the recommendation in real market dynamics.",
+      },
+    ],
+  },
+  {
+    slug: "safe-return",
+    title: "Safe Return",
+    category: "Startup, Technical Lead",
+    image: "/logos/safe-return.png",
+    embedUrl: "https://www.canva.com/design/DAHLKoJVwH4/Q1ZLESBRJmb1WhlKk6CxlA/view?embed",
+    description: "Safe Return is a startup I joined as technical lead. I built safereturn.tech and collaborated with teammates on the brand. My role spans the full technical stack — from architecting and shipping the website to contributing to the product direction and pitch strategy.",
+    highlights: [
+      {
+        title: "Technical Lead",
+        description: "Took ownership of the full technical build, architecting and shipping safereturn.tech from the ground up.",
+      },
+      {
+        title: "Brand Collaboration",
+        description: "Worked closely with teammates on branding and positioning, ensuring the visual identity and messaging aligned with the product vision.",
+      },
+    ],
+  },
+  {
     slug: "nx1",
     title: "NX1",
     category: "Startup, NIL Education Platform & Podcast",
