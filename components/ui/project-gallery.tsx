@@ -89,6 +89,7 @@ interface GalleryItem {
   category: string;
   image: string;
   imagePosition?: string;
+  imageFit?: "cover" | "contain";
 }
 
 const GalleryCard = ({ item, index }: { item: GalleryItem; index: number }) => {
@@ -128,11 +129,14 @@ const GalleryCard = ({ item, index }: { item: GalleryItem; index: number }) => {
         style={{ transform: "translateZ(50px)", transformStyle: "preserve-3d" }}
         className="absolute inset-3 flex flex-col justify-end rounded-xl overflow-hidden"
       >
+        {item.imageFit === "contain" && (
+          <div className="absolute inset-0 bg-white" />
+        )}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={item.image}
           alt={item.title}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className={`absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105 ${item.imageFit === "contain" ? "object-contain p-8" : "object-cover"}`}
           style={item.imagePosition ? { objectPosition: item.imagePosition } : undefined}
         />
         <GenerativeArtCanvas isHovered={isHovered} />

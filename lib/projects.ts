@@ -4,6 +4,7 @@ export interface ProjectData {
   category: string;
   image: string;           // cover image shown in the gallery card
   imagePosition?: string;  // CSS object-position, e.g. "left center"
+  imageFit?: "cover" | "contain"; // defaults to "cover"; use "contain" for logos
   embedUrl?: string;       // Canva embed src, Spotify embed src, etc.
   embedAspectRatio?: string; // e.g. "56.25%" for 16:9, "56.25%" is default
   embedHeight?: number;    // fixed px height for non-ratio embeds like Spotify
@@ -129,6 +130,7 @@ export const projects: ProjectData[] = [
     title: "Costco: Kirkland for ALL",
     category: "Corporate Strategy, BA 453 Capstone",
     image: "/logos/costco.png",
+    imageFit: "contain",
     embedUrl: "https://www.canva.com/design/DAHK_IsM7jE/bgz4qKdc6Rj1wAFw6r-nEQ/view?embed",
     description: "As part of a five-person team in my corporate strategy capstone (BA 453), I helped develop and pitch a strategic recommendation for Costco Wholesale. Our proposal, \"Kirkland for ALL,\" introduced a free-tier membership model giving non-members access exclusively to Kirkland Signature products during designated shopping hours — designed to expand Costco's customer base, drive merchandise revenue, and reduce over-reliance on membership fees.",
     highlights: [
@@ -159,6 +161,7 @@ export const projects: ProjectData[] = [
     title: "Safe Return",
     category: "Startup, Technical Lead",
     image: "/logos/safe-return.png",
+    imageFit: "contain",
     embedUrl: "https://www.canva.com/design/DAHLKoJVwH4/Q1ZLESBRJmb1WhlKk6CxlA/view?embed",
     description: "Safe Return is a startup I joined as technical lead. I built safereturn.tech and collaborated with teammates on the brand. My role spans the full technical stack — from architecting and shipping the website to contributing to the product direction and pitch strategy.",
     highlights: [
