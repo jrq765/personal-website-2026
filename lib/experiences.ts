@@ -8,7 +8,8 @@ export interface ExperienceData {
   brief: string;
   bullets: string[];
   logoPlaceholder: string;
-  logo?: string; // set this when you provide logo assets: e.g. "/logos/wasserman.png"
+  logo?: string;
+  instagramPosts?: { url: string; attribution: string }[];
 }
 
 export const experiences: ExperienceData[] = [
@@ -206,7 +207,7 @@ export const experiences: ExperienceData[] = [
   {
     slug: "oregon-pit-crew",
     company: "Oregon Pit Crew",
-    role: "Photographer & Videographer",
+    role: "Content Creator",
     startDate: "2023-10-01",
     endDate: "2024-09-01",
     location: "Eugene, OR",
@@ -216,5 +217,19 @@ export const experiences: ExperienceData[] = [
     ],
     logoPlaceholder: "O",
     logo: "/logos/oregon-pit-crew.jpeg",
+    instagramPosts: [
+      {
+        url: "https://www.instagram.com/p/C2LkC-KOA_L/",
+        attribution: "@oregonpitcrew",
+      },
+      {
+        url: "https://www.instagram.com/p/CzcFOL0yTWp/",
+        attribution: "@oregonpitcrew",
+      },
+      {
+        url: "https://www.instagram.com/reel/C0U4aiyyWC4/",
+        attribution: "@oregonpitcrew",
+      },
+    ],
   },
 ];

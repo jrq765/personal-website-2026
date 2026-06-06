@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { InstagramEmbed } from "@/components/ui/instagram-embed";
 
 export function generateStaticParams() {
   return experiences.map((e) => ({ slug: e.slug }));
@@ -75,6 +76,12 @@ export default async function ExperiencePage({
           ))}
         </div>
 
+        {exp.instagramPosts && exp.instagramPosts.length > 0 && (
+          <InstagramEmbed
+            posts={exp.instagramPosts.map((p) => p.url)}
+            attribution={exp.instagramPosts[0].attribution}
+          />
+        )}
 
       </div>
     </main>
