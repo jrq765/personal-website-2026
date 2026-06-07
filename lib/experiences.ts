@@ -142,7 +142,7 @@ export const experiences: ExperienceData[] = [
       "Turned campus visibility built through OIC and the podcast into the trust foundation needed to launch a paid service in the NIL space.",
     ],
     logoPlaceholder: "N",
-    logo: "/logos/nx1.jpeg",
+    logo: "/logos/nx1.png",
   },
   {
     slug: "sales-club",

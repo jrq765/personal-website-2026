@@ -178,7 +178,7 @@ export const projects: ProjectData[] = [
     slug: "nx1",
     title: "NX1",
     category: "Startup, NIL Education Platform & Podcast",
-    image: "/logos/nx1.jpeg",
+    image: "/logos/nx1.png",
     imageFit: "contain",
     embedUrl: "https://embed.podcasts.apple.com/gb/podcast/the-nx1-podcast/id1747252536",
     embedHeight: 450,
