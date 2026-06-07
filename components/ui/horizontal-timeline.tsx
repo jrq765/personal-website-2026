@@ -19,7 +19,7 @@ function rawPos(dateStr: string): number {
 
 // Spread bubbles at midpoints to avoid icon overlap
 function buildPositions(sorted: (typeof experiences)[number][]): Record<string, number> {
-  const MIN_GAP = 0.022;
+  const MIN_GAP = 0.085;
   const out: Record<string, number> = {};
   for (let i = 0; i < sorted.length; i++) {
     const mid = (rawPos(sorted[i].startDate) + rawPos(sorted[i].endDate)) / 2;
@@ -272,11 +272,11 @@ export function HorizontalTimeline() {
                       </div>
 
                       {/* Label */}
-                      <div className={`absolute w-36 text-center pointer-events-none select-none ${
+                      <div className={`absolute w-24 text-center pointer-events-none select-none ${
                         isAbove ? "bottom-[calc(100%+10px)] left-1/2 -translate-x-1/2" : "top-[calc(100%+10px)] left-1/2 -translate-x-1/2"
                       }`}>
-                        <p className="text-white text-sm font-semibold leading-tight">{exp.company}</p>
-                        <p className="text-white/60 text-xs mt-0.5 leading-tight">{exp.role.split(",")[0].trim()}</p>
+                        <p className="text-white text-xs font-semibold leading-tight truncate">{exp.company}</p>
+                        <p className="text-white/60 text-[10px] mt-0.5 leading-tight truncate">{exp.role.split(",")[0].trim()}</p>
                       </div>
 
                       {/* Hover card */}

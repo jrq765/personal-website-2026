@@ -179,6 +179,7 @@ export const projects: ProjectData[] = [
     title: "NX1",
     category: "Startup, NIL Education Platform & Podcast",
     image: "/logos/nx1.jpeg",
+    imageFit: "contain",
     embedUrl: "https://embed.podcasts.apple.com/gb/podcast/the-nx1-podcast/id1747252536",
     embedHeight: 450,
     description: "Co-founded NX1 to give student-athletes a clear, practical understanding of their NIL rights and how to monetize them. We built brand awareness through a podcast documenting the behind-the-scenes reality of college sports, used competitive startup programs to validate and fund the platform, and grew our network from zero to a trusted campus presence.",
